@@ -1,0 +1,98 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>proj2</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/materialize/bin/materialize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+		<nav>
+			<div class="nav-wrapper">
+				<h1 class="brand-logo" style = "padding-left: 25px; margin: 5px; font-size: 5rem;">Eat it!<h1>
+				<ul id="nav-mobile" class="right">
+					<li class = "hide-on-med-and-down" style = "color:white;"><a href="#" style = "font-size: 3rem;">Learn more about digestive disorders!</a></li>
+					<li class = "hide-on-large-only" style = "color:white;"><a href="#" style = "font-size: 1.5rem;">Learn more!</a></li>
+				</ul>
+			</div>
+		</nav> 	
+
+		<div class = "row" style = "padding: 0; margin: 0;">
+			<div class = "players col s1" style = "padding: 0; margin: 0;">
+				<img class = "active" src = "images/players/andre.svg" />
+				<img src = "images/players/keiko.svg" />
+				<img src = "images/players/colin.svg" />
+				<img src = "images/players/maria.svg" />
+				<img src = "images/players/priya.svg" />
+			</div>
+			<div class = "row">
+				<div class = "col s7" >
+					<div class = "row" style = "max-height: 80%;">
+						<div class = "player col s6">
+							<h2 id = "player-name">Andre</h2>
+							<img src = "images/players/andre.svg" />
+						</div>
+						<div class = "digestive col s6">
+							<img src = "images/digestive.svg" />
+						</div>
+					</div>
+					<div class = "row" style = "max-height: 19%;">
+						<div class = "player-info col s12">
+							<p>Hi, I'm Andre! I love playing soccer (I'm the goalie!) and eating
+								Snickers! I also have Celiac's disease, which makes it hard for me to
+								eat some foods. I like to eat healthy and safe, so that I can play
+								soccer all the time!</p>
+						</div>
+					</div>
+				</div>
+				<div class = "fridge col s4">
+					<img src = "images/fridge.svg" />
+				</div>
+			</div>
+		</div>
+
+    
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/materialize/bin/materialize.js"></script>
+    <script src="/bower_components/pixi.js/dist/pixi.min.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
