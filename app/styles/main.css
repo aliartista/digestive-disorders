@@ -7,8 +7,8 @@ body {
 	margin: 0;
 }
 
-h1, h2, h4, h5 {
-	font-family: "Amatic", handwriting;
+h1, h2, h4, h5, li {
+	font-family: "Amatic SC", handwriting;
 	font-weight: 700;
 	color: #0054a6;
 	
@@ -29,6 +29,7 @@ nav {
 }
 .players img:hover { background-color: #40bcd8; }
 .players .active { background-color: #40bcd8; }
+#health-feel { font-size: 1.5rem; text-align: center; margin-top: 5px;}
 
 /*** PLAYER COLUMN ***/
 #player-name { 
@@ -52,3 +53,70 @@ nav {
 
 /*** FRIDGE COLUMN ****/
 .fridge img { width: 100%; max-height: 80vh; }
+
+/*** SVG STYLES ***/
+	/* CHARACTERS */
+	#andre .head{fill:#572000;stroke:#000000;stroke-miterlimit:10;}
+	#andre .eye{stroke:#000000;stroke-miterlimit:10;}
+	#andre .nose{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	#andre .mouth{fill:#AD2850;stroke:#AD2850;stroke-miterlimit:10;}
+	#andre .cheek{fill:#6C3D3D;}
+	#andre .hair{stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
+
+	#priya .hair{stroke:#000000;stroke-miterlimit:10;}
+	#priya .head{fill:#7D4E2B;stroke:#6A330D;stroke-miterlimit:10;}
+	#priya .eye{fill:#3C2415;stroke:#3C2415;stroke-miterlimit:10;}
+	#priya .nose{fill:none;stroke:#6A330D;stroke-miterlimit:10;}
+	#priya .mouth{fill:#DB4765;stroke:#DB4665;stroke-miterlimit:10;}
+	#priya .cheek{fill:#914044;}
+	
+	#maria .head{fill:#996D4E;stroke:#725143;stroke-miterlimit:10;}
+	#maria .eye{fill:#006838;stroke:#006838;stroke-miterlimit:10;}
+	#maria .nose{fill:none;stroke:#543E36;stroke-miterlimit:10;}
+	#maria .hair{fill:#3C2415;stroke:#3C2415;stroke-miterlimit:10;}
+	#maria .mouth{fill:#DB4765;stroke:#DB4665;stroke-miterlimit:10;}
+	#maria .cheek{fill:#B76263;}
+	
+	#colin .head{fill:#ECC19C;stroke:#B5917C;stroke-miterlimit:10;}
+	#colin .eye{fill:#2B3990;stroke:#2B3990;stroke-miterlimit:10;}
+	#colin .nose{fill:none;stroke:#9C7761;stroke-miterlimit:10;}
+	#colin .mouth{fill:#B8446A;stroke:#B8446A;stroke-miterlimit:10;}
+	#colin .cheek{fill:#D39090;}
+	#colin .hair{fill:#F7941D;stroke:#F15A29;stroke-miterlimit:10;}
+	
+	#keiko .head{fill:#B57E54;stroke:#7F5C4C;stroke-miterlimit:10;}
+	#keiko .eye{stroke:#000000;stroke-miterlimit:10;}
+	#keiko .nose{fill:none;stroke:#926D5A;stroke-miterlimit:10;}
+	#keiko .mouth{fill:#DB4765;stroke:#DB4665;stroke-miterlimit:10;}
+	#keiko .cheek{fill:#CC7F7F;}
+	#keiko .hair {stroke:#000000;stroke-miterlimit:10;}
+	
+	/* DIGESTIVE SYSTEM */
+	
+	.o-line-fill{fill:none;stroke:#E47425;stroke-width:3;stroke-miterlimit:10;} 
+	.r-line-fill{fill:#D6322F;stroke:#AF2024;stroke-width:3;stroke-miterlimit:10;} 
+	.y-line-fill{fill:#F39237;stroke:#E47425;stroke-width:3;stroke-miterlimit:10;}
+	.r-line{fill:none;stroke:#C54127;stroke-width:3;stroke-miterlimit:10;}
+	.o-fill{fill:#F1603D;}
+	.r-fill{fill:#C54127;}
+	.y-fill{fill:#F39237;}
+	.o-fill-2{fill:#E47425;} 
+	
+	/* FRIDGE */
+	.white{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.gray-1{fill:#E6E7E8;stroke:#000000;stroke-miterlimit:10;}
+	.gray-2{fill:#D1D3D4;stroke:#000000;stroke-miterlimit:10;}
+	.gray-3{fill:#A7A9AC;stroke:#000000;stroke-miterlimit:10;}
+	.gray-5{fill:#808285;stroke:#000000;stroke-miterlimit:10;}
+	.gray-6{fill:#6D6C6C;stroke:#000000;stroke-miterlimit:10;}
+	.gray-7{fill:#414042;stroke:#000000;stroke-miterlimit:10;}
+	
+	/* OTHER */
+	#health-bar .health-meter{fill:#FFFFFF;stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
+	#health-bar .health-total{fill:#0054A6;stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
+
+
+
+
+
+
