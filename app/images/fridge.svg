@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 304 432" style="enable-background:new 0 0 304 432;" xml:space="preserve">
+	 viewBox="0 0 275.3 402.7" style="enable-background:new 0 0 275.3 402.7;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#A7A9AC;stroke:#000000;stroke-miterlimit:10;}
 	.st1{fill:#D1D3D4;stroke:#000000;stroke-miterlimit:10;}
@@ -12,31 +12,39 @@
 	.st6{fill:#414042;stroke:#000000;stroke-miterlimit:10;}
 </style>
 <g id="interiror">
-	<polygon class="st0" points="44.9,362.3 30.8,379.3 31.1,38.9 44.9,53.7 	"/>
-	<polygon class="st0" points="227.9,362.3 242,379.3 241.7,38.9 227.9,53.7 	"/>
-	<polygon class="st1" points="31.1,38.9 44.9,53.7 227.9,53.7 241.7,38.9 	"/>
-	<polygon class="st1" points="30.8,379.3 44.9,362.3 227.9,362.3 242,379.3 	"/>
-	<rect x="44.9" y="53.7" class="st2" width="183" height="308.5"/>
+	<polygon class="st0" points="31.6,346.9 17.5,363.9 17.8,23.5 31.6,38.4 	"/>
+	<polygon class="st0" points="214.5,346.9 228.6,363.9 228.3,23.5 214.5,38.4 	"/>
+	<polygon class="st1" points="17.8,23.5 31.6,38.4 214.5,38.4 228.3,23.5 	"/>
+	<polygon class="st1" points="17.5,363.9 31.6,346.9 214.5,346.9 228.6,363.9 	"/>
+	<rect x="31.6" y="38.4" class="st2" width="183" height="308.5"/>
 </g>
 <g id="shelves">
-	<polygon class="st3" points="227.1,130.2 45.5,130.2 32.5,150.4 240.2,150.4 	"/>
-	<polygon class="st3" points="227.1,217.3 45.5,217.3 32.5,237.5 240.2,237.5 	"/>
-	<polygon class="st3" points="227.1,288.5 45.5,288.5 32.5,308.7 240.2,308.7 	"/>
+	<polygon class="st3" points="213.8,91.2 32.2,91.2 19.2,111.3 226.8,111.3 	"/>
+	<g>
+		<polygon class="st3" points="213.8,181.3 32.2,181.3 19.2,201.5 226.8,201.5 		"/>
+		<rect x="19" y="201.5" class="st3" width="207.8" height="5.8"/>
+	</g>
+	<g>
+		<rect x="19" y="279.8" class="st3" width="207.8" height="5.8"/>
+		<polygon class="st3" points="213.8,259.6 32.2,259.6 19.2,279.8 226.8,279.8 		"/>
+	</g>
 </g>
-<g id="Layer_1">
-	<path class="st1" d="M240.8,26.5H31.9c-4.1,0-7.4,3.3-7.4,7.4v359.7c0,4.1,3.3,7.4,7.4,7.4h208.9c4.1,0,7.4-3.3,7.4-7.4V34
-		C248.2,29.9,244.9,26.5,240.8,26.5z M240.4,373.1c0,2.9-2.4,5.3-5.3,5.3H38.1c-2.9,0-5.3-2.4-5.3-5.3v-210c0-2.9,2.4-5.3,5.3-5.3
-		h197.1c2.9,0,5.3,2.4,5.3,5.3V373.1z M240.4,144.5c0,3.3-2.6,5.9-5.9,5.9H38.7c-3.3,0-5.9-2.6-5.9-5.9V46c0-3.3,2.6-5.9,5.9-5.9
-		h195.8c3.3,0,5.9,2.6,5.9,5.9V144.5z"/>
-	<line class="st3" x1="248.2" y1="34" x2="24.4" y2="34"/>
-	<line class="st3" x1="24.4" y1="153.8" x2="248.2" y2="153.8"/>
-	<rect x="40.9" y="401.1" class="st4" width="11.8" height="4.4"/>
-	<rect x="222.2" y="401.1" class="st4" width="11.8" height="4.4"/>
-	<rect x="267.3" y="26.5" class="st1" width="11.5" height="123.8"/>
-	<rect x="267.3" y="159" class="st1" width="11.5" height="239"/>
-	<polygon class="st5" points="267.3,26.5 248.2,34 248.2,153.8 267.3,150.4 	"/>
-	<polygon class="st5" points="248.2,384.5 267.3,398 267.3,159 248.2,154.1 	"/>
-	<polygon class="st6" points="267.3,150.4 278.8,150.4 260.4,154.1 248.9,154.1 	"/>
-	<polygon class="st6" points="259.7,154.1 248.2,154.1 267.3,159 277,158.5 	"/>
+<g id="outside">
+	<path class="st1" d="M227.5,11.2H18.5c-4.1,0-7.4,3.3-7.4,7.4v359.7c0,4.1,3.3,7.4,7.4,7.4h208.9c4.1,0,7.4-3.3,7.4-7.4V18.6
+		C234.9,14.5,231.6,11.2,227.5,11.2z M227.1,357.3c0,3.1-2.4,5.7-5.3,5.7H24.7c-2.9,0-5.3-2.6-5.3-5.7V129.4c0-3.1,2.4-5.7,5.3-5.7
+		h197.1c2.9,0,5.3,2.6,5.3,5.7V357.3z M227.1,106.7c0,2.6-2.6,4.6-5.9,4.6H25.4c-3.3,0-5.9-2.1-5.9-4.6V29.4c0-2.6,2.6-4.6,5.9-4.6
+		h195.8c3.3,0,5.9,2.1,5.9,4.6V106.7z"/>
+	<line class="st3" x1="234.9" y1="18.6" x2="11.1" y2="18.6"/>
+	<line class="st3" x1="11.1" y1="118.5" x2="234.9" y2="118.5"/>
+	<rect x="27.5" y="385.8" class="st4" width="11.8" height="4.4"/>
+	<rect x="208.9" y="385.8" class="st4" width="11.8" height="4.4"/>
+	<rect x="254" y="11.2" class="st1" width="11.5" height="104.5"/>
+	<rect x="254" y="123.4" class="st1" width="11.5" height="259.3"/>
+	<polygon class="st5" points="254,11.2 234.9,17.5 234.9,118.5 254,115.6 	"/>
+	<polygon class="st5" points="234.9,368 254,382.7 254,123.8 234.9,118.5 	"/>
+	<polygon class="st6" points="254,114.7 265.5,114.7 247.1,118.4 235.6,118.4 	"/>
+	<polygon class="st6" points="246.4,118.5 234.9,118.5 254,123.4 263.7,122.9 	"/>
+</g>
+<g id="Layer_4">
 </g>
 </svg>

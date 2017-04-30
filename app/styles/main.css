@@ -18,6 +18,22 @@ nav {
 	z-index: 99;
 	background-color: #f39237;
 }
+.row {margin:0!important; padding:0!important;}
+.col {margin-top:0!important; padding-top:0!important;}
+
+.food {
+	width: 28%;
+	padding: 2%;
+	display: inline;
+}
+#food-container {
+	width: 24.55%; 
+	position: absolute; 
+	top: 20vh; 
+	right: 0; 
+	z-index: 199;
+}
+
 /**** PLAYERS COLUMN ****/
 .players {
 	z-index: 98;
@@ -33,7 +49,7 @@ nav {
 
 /*** PLAYER COLUMN ***/
 #player-name { 
-	font-size: 6.5rem;
+	font-size: 4.5zrem;
 	color: #0054a6;
 	text-align: center;
 	margin-bottom: 0;
@@ -52,15 +68,17 @@ nav {
 .player-info p { font-size: 1.5rem;	}
 
 /*** FRIDGE COLUMN ****/
-.fridge img { width: 100%; max-height: 80vh; }
+#fridge-svg { width: 100%; max-height: 80vh; }
 
 /*** SVG STYLES ***/
 	/* CHARACTERS */
+	path eye {display: none;}
+	
 	#andre .head{fill:#572000;stroke:#000000;stroke-miterlimit:10;}
 	#andre .eye{stroke:#000000;stroke-miterlimit:10;}
 	#andre .nose{fill:none;stroke:#000000;stroke-miterlimit:10;}
 	#andre .mouth{fill:#AD2850;stroke:#AD2850;stroke-miterlimit:10;}
-	#andre .cheek{fill:#6C3D3D;}
+	#andre .cheek{fill:#DB4765; opacity: .5;}
 	#andre .hair{stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
 
 	#priya .hair{stroke:#000000;stroke-miterlimit:10;}
@@ -68,39 +86,39 @@ nav {
 	#priya .eye{fill:#3C2415;stroke:#3C2415;stroke-miterlimit:10;}
 	#priya .nose{fill:none;stroke:#6A330D;stroke-miterlimit:10;}
 	#priya .mouth{fill:#DB4765;stroke:#DB4665;stroke-miterlimit:10;}
-	#priya .cheek{fill:#914044;}
+	#priya .cheek{fill:#DB4765; opacity: .5;}
 	
 	#maria .head{fill:#996D4E;stroke:#725143;stroke-miterlimit:10;}
 	#maria .eye{fill:#006838;stroke:#006838;stroke-miterlimit:10;}
 	#maria .nose{fill:none;stroke:#543E36;stroke-miterlimit:10;}
 	#maria .hair{fill:#3C2415;stroke:#3C2415;stroke-miterlimit:10;}
 	#maria .mouth{fill:#DB4765;stroke:#DB4665;stroke-miterlimit:10;}
-	#maria .cheek{fill:#B76263;}
+	#maria .cheek{fill:#DB4765; opacity: .5;}
 	
 	#colin .head{fill:#ECC19C;stroke:#B5917C;stroke-miterlimit:10;}
 	#colin .eye{fill:#2B3990;stroke:#2B3990;stroke-miterlimit:10;}
 	#colin .nose{fill:none;stroke:#9C7761;stroke-miterlimit:10;}
 	#colin .mouth{fill:#B8446A;stroke:#B8446A;stroke-miterlimit:10;}
-	#colin .cheek{fill:#D39090;}
+	#colin .cheek{fill:#DB4765; opacity: .5;}
 	#colin .hair{fill:#F7941D;stroke:#F15A29;stroke-miterlimit:10;}
 	
 	#keiko .head{fill:#B57E54;stroke:#7F5C4C;stroke-miterlimit:10;}
 	#keiko .eye{stroke:#000000;stroke-miterlimit:10;}
 	#keiko .nose{fill:none;stroke:#926D5A;stroke-miterlimit:10;}
 	#keiko .mouth{fill:#DB4765;stroke:#DB4665;stroke-miterlimit:10;}
-	#keiko .cheek{fill:#CC7F7F;}
+	#keiko .cheek{fill:#DB4765; opacity: .5;}
 	#keiko .hair {stroke:#000000;stroke-miterlimit:10;}
 	
 	/* DIGESTIVE SYSTEM */
 	
-	.o-line-fill{fill:none;stroke:#E47425;stroke-width:3;stroke-miterlimit:10;} 
-	.r-line-fill{fill:#D6322F;stroke:#AF2024;stroke-width:3;stroke-miterlimit:10;} 
-	.y-line-fill{fill:#F39237;stroke:#E47425;stroke-width:3;stroke-miterlimit:10;}
-	.r-line{fill:none;stroke:#C54127;stroke-width:3;stroke-miterlimit:10;}
-	.o-fill{fill:#F1603D;}
-	.r-fill{fill:#C54127;}
-	.y-fill{fill:#F39237;}
-	.o-fill-2{fill:#E47425;} 
+	.r-line-fill{fill:#D6322F;	stroke:#AF2024;stroke-width:3;stroke-miterlimit:10;} 
+	.y-line-fill{fill:#F39237;	stroke:#E47425;stroke-width:3;stroke-miterlimit:10;}
+	.r-fill{	fill:#C54127;}
+	.y-fill{	fill:#F39237;}
+	.o-fill{	fill:#F1603D;}
+	.o-fill-2{	fill:#E47425;} 
+	.o-line{	fill:none;		stroke:#E47425;stroke-width:3;stroke-miterlimit:10;} 	
+	.r-line{	fill:none;		stroke:#C54127;stroke-width:3;stroke-miterlimit:10;}
 	
 	/* FRIDGE */
 	.white{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}

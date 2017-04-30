@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>proj2</title>
+    <title>Eat it!</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -12,6 +12,7 @@
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/materialize/bin/materialize.css" />
+    <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -27,19 +28,19 @@
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-		<nav>
+		<nav style = "width: 100vw; height: 10vh;">
 			<div class="nav-wrapper">
-				<h1 class="brand-logo" style = "padding-left: 25px; font-size: 5rem; margin: 5px;">Eat it!</h1>
+				<h1 class="brand-logo" style = "padding-left: 25px; font-size: 3rem; margin: 5px;">Eat it!</h1>
 				<ul id="nav-mobile" class = "right" style = "margin: 14px;">
-					<li class = "hide-on-med-and-down" style = "color:white;"><a href="#" style = "font-size: 3rem;">Learn more about digestive disorders!</a></li>
-					<li class = "hide-on-large-only" style = "color:white;"><a href="#" style = "font-size: 1.5rem;">Learn more!</a></li>
+					<li class = "hide-on-med-and-down" style = "color:white;"><a href="#" style = "font-size: 2rem;">Learn more about digestive disorders!</a></li>
+					<li class = "hide-on-large-only" style = "color:white;"><a href="#" style = "font-size: 1rem;">Learn more!</a></li>
 				</ul>
 			</div>
 		</nav> 	
 
-		<div class = "row" style = "padding: 0; margin: 0;">
+		<div class = "row">
 			
-			<div class = "players col s1" style = "padding: 0; margin: 0;">  <!-- height: 90%, width: 10%-->
+			<div class = "players col s1" style = "padding: 0; margin: 0;"> 
 				<svg version="1.1" id="andre-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						 viewBox="0 0 108 108" style="enable-background:new 0 0 108 108;" xml:space="preserve" class = "active">
 					<g id="andre">
@@ -121,23 +122,32 @@
 				</svg>
 			</div>
 			
-			<div class = "row"> <!-- height: 90%, width: 90%;-->
+			<div class = "row" >
 				<div class = "col s11" >
-					<div class = "row">
-						<div class = "col s8">
+					<div class = "row" style = "height: 10vh;">
+						<div class = "col s4">
 							<h2 id = "player-name">Andre</h2>
 						</div>
+						<div class = "col offset-s4 s4">
+							<h3 style = "display: inline; font-size: 2rem; float: right;">How to play</h3>
+						</div>
 					</div>
-					<div class = "row" style = "max-height: 80%;">
-						<div class = "player col s4">
+					<div class = "row" >
+						<div class = "player col s4" id = "main-player">
 							<svg version="1.1" id="andre-player" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 									 viewBox="0 0 108 108" style="enable-background:new 0 0 108 108;" xml:space="preserve" class = "active">
 								<g id="andre">
 									<ellipse class="head" cx="54.5" cy="62.4" rx="36.7" ry="34.7"/>
 									<circle class="eye" cx="39.6" cy="64" r="3.8"/>
 									<circle class="eye" cx="68.6" cy="64" r="3.8"/>
+									<path class="eye" d="M39.6,60.2c2.1,0,3.8,1.7,3.8,3.8c0,2.1-1.7,0-3.8,0s-3.8,2.1-3.8,0C35.8,61.9,37.5,60.2,39.6,60.2z"/>
+									<path class="eye" d="M68.6,60.2c2.1,0,3.8,1.7,3.8,3.8c0,2.1-1.7,0-3.8,0s-3.8,2.1-3.8,0C64.8,61.9,66.5,60.2,68.6,60.2z"/>
 									<path class="nose" d="M59.2,76.8c0,0-5.3,0-5.5-2s1-4.2,1-4.2"/>
-									<path class="mouth" d="M37.9,79.4c0,0-0.3,3.7,6.5,6.9s13.1,0.8,13.1,0.8l-19.6-8.4V79.4z"/>
+									<path class="mouth" d="M37.9,79.4c0,0-0.3,3.7,6.5,6.9s13.1,0.8,13.1,0.8l-19.6-8.4V79.4z">
+										<animate id = "back-to-smile" 	fill = "freeze" dur = "500ms" begin = "indefinite" attributeName = "d" to = "M37.9,79.4c0,0-0.3,3.7,6.5,6.9s13.1,0.8,13.1,0.8l-19.6-8.4V79.4z" /> 
+										<animate id = "smile-to-small" 	fill = "freeze" dur = "500ms" begin = "indefinite" attributeName = "d" to = "M45.8,83.3c0,0,2.8,1.2,7.4,1.3c5,0,8.4-2.1,8.4-2.1H44.9L45.8,83.3z" /> 
+										<animate id = "small-to-sad" 	fill = "freeze" dur = "500ms" begin = "indefinite" attributeName = "d" to = "M47.7,82.4c2.3-0.4,2.3-0.6,5.5-0.6c4,0,9.5,2.4,9.2,1.8c-2.2-4.3-17.4-3.3-17.7-0.3 C44.7,83.5,46.2,82.8,47.7,82.4z" /> 
+									</path>									
 									<ellipse class="cheek" cx="32.5" cy="73.8" rx="3.6" ry="3.3"/>
 									<ellipse class="cheek" cx="70.6" cy="80.3" rx="3.6" ry="3.3"/>
 									<path class="hair" d="M18.4,69.5c0,0,2.3-20,17.4-24.9c10.4-3.3,23.5-5.4,37.5-0.4S90,64.9,90.7,68.8s6.7-13,4.9-22.9
@@ -149,10 +159,10 @@
 								<rect x="4" y="4" class="health-meter" width="410.5" height="66"/>
 								<rect x="4" y="4" class="health-total" width="211" height="66"/>
 							</svg>
-							<p id = "health-feel">Feelin' good!</p> <!-- Feelin' great! Feelin' good! We feel ok! Nauseous. Tummy is angry. -->
+							<p id = "health-feel" >Feelin' good!</p> <!-- "Feelin' great!", "Feelin' good!", "We feel ok!", "Nauseous. Pukey. Upset-y.", "You've angered the tummy." -->
 						</div>
-						<div class = "digestive col s4">
-							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						<div class = "digestive col s4" id = "droppable">
+							<svg version="1.1" id = "digestive-system" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 									 viewBox="0 0 287.3 405.7" style="enable-background:new 0 0 287.3 405.7;" xml:space="preserve">
 								<g id="liver">
 									<path class="y-line-fill" d="M237,76.2c0,0-36-23-65.5-23.7s-53.8,5.8-53.8,5.8s-15.8-4.7-35.5-2.8S50.8,71.2,47.8,76.2s-16.3,15-13.3,32.3
@@ -249,9 +259,9 @@
 											c-0.4-0.2-0.7-0.5-1.1-0.7c-0.8-0.4-1.5-0.9-2.3-1.2c-1.6-0.8-3.2-1.4-4.9-1.9c-6.8-1.9-14.2-2.2-21.4-1.7
 											c-3.6,0.2-7.2,0.6-10.8,1.2C92.4,219.4,88.7,219.6,85,219.9z"/>
 									</g>
-									<path class="o-line-fill" d="M126.2,253.2c3.9,5.6,25.1,16.2,35.7,13.2s10.4-27.7,8.9-35.9c-1.5-8.2-17.8-16.3-17.8-16.3"/>
-									<path class="o-line-fill" d="M171,231.9c0,0,11.5-1.3,22.3-7.8s15.9-30,15.9-30"/>
-									<path class="o-line-fill" d="M203.7,208c0,0,7.8-5.9,13.8-4.1s7.3,7,6.3,13.5s-5.5,19.5-8,22c-2.5,2.5,5.5,7.5-3.8,18
+									<path class="o-line" d="M126.2,253.2c3.9,5.6,25.1,16.2,35.7,13.2s10.4-27.7,8.9-35.9c-1.5-8.2-17.8-16.3-17.8-16.3"/>
+									<path class="o-line" d="M171,231.9c0,0,11.5-1.3,22.3-7.8s15.9-30,15.9-30"/>
+									<path class="o-line" d="M203.7,208c0,0,7.8-5.9,13.8-4.1s7.3,7,6.3,13.5s-5.5,19.5-8,22c-2.5,2.5,5.5,7.5-3.8,18
 										c-9.3,10.5-11.3,9.5-11.3,9.5s5.3,7,2.8,12.2s-10.5,12.3-20,11.8s-16.3-0.8-21.8-9.5s-6.3-14.6-6.3-14.6"/>
 									<g>
 										<path class="o-fill-2" d="M170.5,244.5c1.7-0.4,3.4-0.5,5-0.6c1.7-0.1,3.3-0.1,5,0.1c1.7,0.2,3.3,0.5,4.9,1c1.6,0.5,3.1,1.3,4.3,2.3
@@ -277,7 +287,7 @@
 											c0.2,1.4,0.6,2.7,1.5,3.8c-1.1-0.9-1.8-2.2-2.3-3.7c-0.5-1.4-0.6-2.9-0.6-4.4c0-1.5,0.2-2.9,0.4-4.4c0.3-1.5,0.6-2.9,1.1-4.3
 											L186.9,262.4z"/>
 									</g>
-									<path class="o-line-fill" d="M118.8,253.4c0,0-10.3,29.8,12,36.5s27.8-12,27.8-12"/>
+									<path class="o-line" d="M118.8,253.4c0,0-10.3,29.8,12,36.5s27.8-12,27.8-12"/>
 									<g>
 										<path class="o-fill-2" d="M140.1,261.3c0.4,1.5,0.5,2.9,0.6,4.4c0,1.4-0.1,2.9-0.4,4.3c-0.3,1.4-0.9,2.7-1.7,3.9
 											c-0.8,1.2-1.9,2.1-3,2.8c1-1,1.8-2,2.3-3.2c0.5-1.2,0.8-2.5,0.9-3.8c0.1-1.3-0.1-2.6-0.3-3.8c-0.3-1.2-0.7-2.5-1.1-3.6
@@ -290,11 +300,11 @@
 											c-1.4,0.5-2.7,1.3-3.9,2.2c-1.2,0.9-2.3,2-3.3,3.2c-1.9,2.3-3,5.3-2.4,8.1c0.6,2.8,2.7,5.2,5,7c2.4,1.8,5.2,2.8,8.2,3.2
 											c2.9,0.5,6,0.4,9,0.1c3-0.4,6-1,8.8-1.9L116.9,268.4z"/>
 									</g>
-									<path class="o-line-fill" d="M85,251.7c-9.8-4.7-8-22-8-22"/>
-									<path class="o-line-fill" d="M91.5,266.9c0,0,2.5,25.7,16.8,30.7s31.2-2.2,36-6.7"/>
-									<path class="o-line-fill" d="M127.6,298.4c0,0,12.1,7.3,29.1,5.3s23.2-13,23.2-13"/>
-									<path class="o-line-fill" d="M222.8,207.7"/>
-									<path class="o-line-fill" d="M74.7,195.4c0,0-9.9,10.6-5.9,20.3c3.9,9.7,7.1,12.8,13.2,14.8s25.8,0.3,28,0c2.2-0.3,17-0.8,21.3,5.7
+									<path class="o-line" d="M85,251.7c-9.8-4.7-8-22-8-22"/>
+									<path class="o-line" d="M91.5,266.9c0,0,2.5,25.7,16.8,30.7s31.2-2.2,36-6.7"/>
+									<path class="o-line" d="M127.6,298.4c0,0,12.1,7.3,29.1,5.3s23.2-13,23.2-13"/>
+									<path class="o-line" d="M222.8,207.7"/>
+									<path class="o-line" d="M74.7,195.4c0,0-9.9,10.6-5.9,20.3c3.9,9.7,7.1,12.8,13.2,14.8s25.8,0.3,28,0c2.2-0.3,17-0.8,21.3,5.7
 										c4.3,6.5,5.1,11.9,0,14.5c-5.1,2.6-15.7,2.7-15.7,2.7"/>
 									<g>
 										<path class="o-fill-2" d="M118.5,255.3C118.7,255.4,118.6,255.3,118.5,255.3C118.6,255.3,118.5,255.3,118.5,255.3
@@ -303,7 +313,7 @@
 											c0.9-0.1,1.8-0.1,2.8-0.1c0.5,0,1,0,1.5,0.1c0.3,0,0.5,0.1,0.8,0.1c0.1,0,0.3,0.1,0.4,0.1c0.1,0,0.1,0,0.2,0.1
 											c0.1,0,0.1,0,0.4,0.2L118.5,255.3z"/>
 									</g>
-									<path class="o-line-fill" d="M222.8,208.7c0,0,2.6-19.6-1.5-21.5"/>
+									<path class="o-line" d="M222.8,208.7c0,0,2.6-19.6-1.5-21.5"/>
 								</g>
 								<g id="stomach">
 									<path class="r-line-fill" d="M149.7,21.8c0,0,15.6,49.8,21.3,52.2c5.7,2.3,7.3,3,7.3,3s8-6.7,17.2-9c9.2-2.3,15.1-3.7,28.2,3
@@ -315,54 +325,31 @@
 							</svg>
 						</div>
 						<div class = "fridge col s4">
-							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-									 viewBox="0 0 275.3 402.7" style="enable-background:new 0 0 275.3 402.7;" xml:space="preserve">
-								<g id="interior">
-									<polygon class="gray-3" points="31.6,346.9 17.5,363.9 17.8,23.5 31.6,38.4 	"/>
-									<polygon class="gray-3" points="214.5,346.9 228.6,363.9 228.3,23.5 214.5,38.4 	"/>
-									<polygon class="gray-2" points="17.8,23.5 31.6,38.4 214.5,38.4 228.3,23.5 	"/>
-									<polygon class="gray-2" points="17.5,363.9 31.6,346.9 214.5,346.9 228.6,363.9 	"/>
-									<rect x="31.6" y="38.4" class="gray-1" width="183" height="308.5"/>
-								</g>
-								<g id="shelves">
-									<polygon class="white" points="213.8,114.8 32.2,114.8 19.2,135 226.8,135 	"/>
-									<polygon class="white" points="213.8,202 32.2,202 19.2,222.2 226.8,222.2 	"/>
-									<polygon class="white" points="213.8,273.2 32.2,273.2 19.2,293.4 226.8,293.4 	"/>
-									<rect x="19" y="222.2" class="white" width="207.8" height="5.8"/>
-									<rect x="19" y="293.4" class="white" width="207.8" height="5.8"/>
-								</g>
-								<g id="outside">
-									<path class="gray-2" d="M227.5,11.2H18.5c-4.1,0-7.4,3.3-7.4,7.4v359.7c0,4.1,3.3,7.4,7.4,7.4h208.9c4.1,0,7.4-3.3,7.4-7.4V18.6
-										C234.9,14.5,231.6,11.2,227.5,11.2z M227.1,357.8c0,2.9-2.4,5.3-5.3,5.3H24.7c-2.9,0-5.3-2.4-5.3-5.3v-210c0-2.9,2.4-5.3,5.3-5.3
-										h197.1c2.9,0,5.3,2.4,5.3,5.3V357.8z M227.1,129.1c0,3.3-2.6,5.9-5.9,5.9H25.4c-3.3,0-5.9-2.6-5.9-5.9V30.7c0-3.3,2.6-5.9,5.9-5.9
-										h195.8c3.3,0,5.9,2.6,5.9,5.9V129.1z"/>
-									<line class="white" x1="234.9" y1="18.6" x2="11.1" y2="18.6"/>
-									<line class="white" x1="11.1" y1="138.5" x2="234.9" y2="138.5"/>
-									<rect x="27.5" y="385.8" class="gray-6" width="11.8" height="4.4"/>
-									<rect x="208.9" y="385.8" class="gray-6" width="11.8" height="4.4"/>
-									<rect x="254" y="11.2" class="gray-2" width="11.5" height="123.8"/>
-									<rect x="254" y="143.7" class="gray-2" width="11.5" height="239"/>
-									<polygon class="gray-5" points="254,11.2 234.9,18.6 234.9,138.5 254,135 	"/>
-									<polygon class="gray-5" points="234.9,369.2 254,382.7 254,143.7 234.9,138.7 	"/>
-									<polygon class="gray-7" points="254,135 265.5,135 247.1,138.7 235.6,138.7 	"/>
-									<polygon class="gray-7" points="246.4,138.7 234.9,138.7 254,143.7 263.7,143.2 	"/>
-								</g>
-							</svg>
+							<img src = "images/fridge.svg" id = "fridge-svg" />
+							<div id = "food-container">
+								<div style = "padding-top: 17%;">
+									<img id = "icecream" src = "images/food/ice-cream.svg" class = "food" alt = "ice-cream" >
+									<img id = "coffee" src = "images/food/coffee.svg" 		class = "food" alt = "coffee" >
+								</div>
+								<div style = "padding-top: 9%;">
+									<img id = "fish" src = "images/food/fish.svg" 			class = "food" alt = "fish" >
+									<img id = "fruit" src = "images/food/fruit.svg" 		class = "food" alt = "fruit" >
+								</div>
+								<div style = "padding-top: 3%;">
+									<img id = "nuts" src = "images/food/nuts.svg" 			class = "food" alt = "nuts" >
+									<img id = "vegetable"src = "images/food/vegetable.svg" 	class = "food" alt = "vegetable" >
+								</div >
+								<div style = "padding-top: 3%;">
+									<img id = "bread" src = "images/food/bread.svg" 		class = "food" alt = "bread" >
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class = "row" style = "max-height: 19%;">
-						<div class = "player-info col s12">
-							<p>Hi, I'm Andre! I love playing soccer (I'm the goalie!) and eating
-								Snickers! I also have Celiac's disease, which makes it hard for me to
-								eat some foods. I like to eat healthy and safe, so that I can play
-								soccer all the time!</p>
-						</div>
-					</div>
-				</div>
-				<div class = "fridge col s4">
-					
 				</div>
 			</div>
+		</div>
+		<div>
+		
 		</div>
 
     
@@ -382,6 +369,7 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/materialize/bin/materialize.js"></script>
     <script src="/bower_components/pixi.js/dist/pixi.min.js"></script>
+    <script src="/bower_components/jquery-ui/jquery-ui.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
