@@ -1,18 +1,23 @@
 
 @import url('https://fonts.googleapis.com/css?family=Amaranth|Amatic+SC:400,700');
 
+
 body {
 	font-family: "Amaranth", Helvetica, sans-serif;
 	color: #333;
 	margin: 0;
+	font-size: 1.2rem;
+	overflow: hidden;
 }
 
 h1, h2, h4, h5, li {
 	font-family: "Amatic SC", handwriting;
 	font-weight: 700;
 	color: #0054a6;
-	
 }
+
+h4 {border-bottom: 3px solid #F39237;}
+
 nav {
 	height: 10vh;
 	z-index: 99;
@@ -46,6 +51,39 @@ nav {
 .players img:hover { background-color: #40bcd8; }
 .players .active { background-color: #40bcd8; }
 #health-feel { font-size: 1.5rem; text-align: center; margin-top: 5px;}
+
+/*** DISEASE CONTENT ***/
+#diseaseContent {
+	z-index: 299; 
+	position: absolute; 
+	top: 10vh; 
+	left: 39.56vw; 
+	height: 90vh; 
+	background-color: rgb(64, 188, 216);
+	padding: 50px;
+	color: black;
+	display: none;
+	overflow-y: scroll;
+}
+#close {
+	float: right; 
+	padding: 0px 45px; 
+	margin: 0px;
+	color: black;
+	display: block;
+}
+#close:hover {cursor: pointer;}
+#winLoss {
+	display: block;
+	color: black;
+	font-size: 6 rem;
+}
+#diseaseInfo {
+	dispaly: block;
+}
+#diseaseContentDisease {display: block;}
+#diseaseContentFood {display: block;}
+#diseaseContentFoodImg {display: block;}
 
 /*** PLAYER COLUMN ***/
 #player-name { 
